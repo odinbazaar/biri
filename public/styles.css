@@ -1,0 +1,102 @@
+:root {
+  /* Lacivert (Navy Blue) */
+  --navy-950: #060d1b;
+  --navy-900: #0a1128;
+  --navy-800: #0f1e36;
+  --navy-700: #1b2a4a;
+  --navy-600: #2d4068;
+  --navy-100: #e7ecf4;
+  --navy-50: #f2f5f9;
+
+  /* Rolex Yeşili (Authentic Rolex Green) */
+  --rolex-green: #006039;
+  --rolex-green-hover: #004d2e;
+  --rolex-green-light: #007a49;
+  --rolex-green-surface: #e6f4ed;
+  --rolex-green-border: #9ed6be;
+
+  /* Turuncu (Energetic Action Orange) */
+  --orange: #ff6b00;
+  --orange-hover: #e55e00;
+  --orange-light: #ff8533;
+  --orange-surface: #fff3eb;
+  --orange-border: #ffd1b3;
+
+  /* Temel Arayüz */
+  --surface: #ffffff;
+  --surface-alt: #f8fafc;
+  --border: #e2e8f0;
+  --text-main: #0a1128;
+  --text-muted: #576579;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  background-color: #f8fafc;
+  color: var(--text-main);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Mobil Yatay Kaydırma (Scrollbar Gizleme) */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.bg-pattern {
+  background-color: var(--navy-900);
+  background-image: radial-gradient(rgba(0, 96, 57, 0.25) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+.hero-gradient {
+  background: linear-gradient(135deg, #060d1b 0%, #0a1128 45%, #006039 100%);
+}
+
+.card-hover {
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 28px -10px rgba(10, 17, 40, 0.16);
+}
+
+/* Rozetler */
+.badge-rolex {
+  background: var(--rolex-green-surface);
+  color: var(--rolex-green);
+  border: 1px solid var(--rolex-green-border);
+}
+
+.badge-orange {
+  background: var(--orange-surface);
+  color: var(--orange-hover);
+  border: 1px solid var(--orange-border);
+}
+
+.badge-navy {
+  background: var(--navy-50);
+  color: var(--navy-800);
+  border: 1px solid var(--navy-100);
+}
+
+/* Modal Geçişleri */
+.modal-overlay {
+  transition: opacity 0.2s ease-in-out;
+}
+
+.modal-content {
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}

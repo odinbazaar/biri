@@ -1,0 +1,14 @@
+{
+  "name": "biri-platform",
+  "version": "1.0.0",
+  "description": "Biri - İzmir ve Çevresi Hizmet Platformu (Temizlik, Tadilat, Nakliyat, Tamir)",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "keywords": ["izmir", "hizmet", "usta", "temizlik", "tadilat", "nakliyat", "tamir"],
+  "author": "Biri Teknoloji",
+  "license": "ISC"
+}
